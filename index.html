@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./assets/aplicaciones (1).png" />
+   
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./registros.css" />
+    <link rel="stylesheet" href="./registrar.css" />
+    <script src="./index.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/a320a59c72.js" crossorigin="anonymous"></script>
+    <title>Compu@ccesorios</title>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <header>
+        <div class="header-wrapper">
+          <div class="header__brand">
+            <img class="header__brand-icon" src="./assets/aplicaciones (1).png" alt="icon_1" srcset="" />
+            <h3 class="header__brand-title">Compu@ccesorios</h3>
+          </div>
+
+          <nav class="main-nav">
+            <a class="main-nav__link" href="#">Inicio</a>
+            <a class="main-nav__link" href="">Productos</a>
+            <a class="main-nav__link" href="">Contactanos</a>
+            <a class="main-nav__link main-nav__link--special" href="">Registrarse</a>
+          </nav>
+        </div>
+      </header>
+    <main>
+      <button type="button" class="button blue mobile" id="registrarCliente">
+        Registar Cliente
+      </button>
+      <table id="tbCliente" class="registros">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo Electronico</th>
+            <th>Numero de Telefono</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Datos Cliente</h2>
+            <span class="modal-close" id="modalClose">&#10006;</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input
+              id="nombre"
+              type="text"
+              data-index="new"
+              class="modal-field"
+              placeholder="Nombre"
+              required
+            />
+            <input
+              id="email"
+              type="email"
+              class="modal-field"
+              placeholder="e-mail"
+              required
+            />
+            <input
+              id="telefono"
+              type="text"
+              class="modal-field"
+              placeholder="telefono"
+              required
+            />
+
+          </form>
+          <footer class="modal-bottom">
+            <button id="guardar" class="button green">Guardar</button>
+            <button id="cancelar" class="button blue">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer> 
+      <div class="grid">
+        <div class="textos-footer">
+            <h2 class="subtitulo">contactanos</h2>
+        </div>
+        <div class="footer-item1">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+        </div>
+        <div class="footer-item2">
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+        <div class="footer-item3">
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+        </div>
+    </div>
+    </footer>
+    </div>
+  </body>
+</html>
